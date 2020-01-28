@@ -1,0 +1,20 @@
+<div class="container" style="padding-top: 30px;">
+    <h1 class="display-3" style="padding-top: 30px;">Edit Drinker's Page</h1>
+    <br/>
+    <p>Made a boo-boo? Change your profile using this form. </p>
+</div>
+
+<div class="container" style="padding-top: 30px;">
+    <%= form_for @drinker do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <%= f.label :goal %>
+    <%= f.text_field :goal %>
+
+    <%= f.submit %>
+    <% end %>
+
+    <%= button_to "Delete", drinker_path(@drinker), method: :delete %>
+
+</div>
