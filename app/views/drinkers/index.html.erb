@@ -1,0 +1,20 @@
+
+<h2 class="display-3" style="padding-top: 30px;">Who's Drinking?</h2>
+
+<div class="container">
+    <div class="row row-cols-2">
+
+        <div class="col"> 
+            <ul style= "list-style-type: none;">
+                <% @drinkers.each do |drinker| %>
+                <li style="padding-top: 20px;"><h6><%= link_to drinker.name, drinker %>, <%= drinker.goal %></h6></li>
+                <% end %>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<div class="container" style="padding-top: 30px;">
+    <h3>Want to join the #DRANK challenge? Join <%= link_to "here.", "/drinkers/new" %></h3>
+</div>
