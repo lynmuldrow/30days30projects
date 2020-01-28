@@ -4,6 +4,12 @@
 <div class="container">
     <div class="row row-cols-2">
 
+        <div class="col">
+            <h2 style="padding: 15px;">Featured Drinker: Pikachu</h2>
+            <div style="padding: 20px;"><%= image_tag "pikawater.jpeg" :alt => "pikachu drinking" %></div>
+            <p>A sturdy little ball electricity with a mighty thirst, Pikachu always achieves his #DRANK goals. </p>
+        </div>
+
         <div class="col"> 
             <ul style= "list-style-type: none;">
                 <% @drinkers.each do |drinker| %>
